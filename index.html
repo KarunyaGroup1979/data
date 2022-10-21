@@ -1,0 +1,964 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta content="width=device-width, initial-scale=1.0" name="viewport">
+      <meta type="" title="Data Kawach">
+      <meta property="" site_name="datakawach.com">
+      <meta property="" type="website">
+      <meta name="keywords" content="HTML,CSS,Bootstrap,JavaScript,php">
+      <meta name="keywords" content="cyber security,cloud security,one direction,hybrid device,security expert,Data Privacy,technical and innovative">
+      <meta name="author" content="Sapna Bhatnagar">
+      <meta property="description" content="Data Kawach covers many different areas, including access control, cloud security, malware protection, BYOD security, remote workforce, and web security.">
+      <meta name="Services" content="Data Privacy,Hardware & Embedded Systems,Network security,Government & Defense">
+      <meta name="Challenges" content="To secure your organization, you must first identify who your threat actors are, and what critical systems and data underpin your business.">
+      <title>Data Kawach</title>
+      <!-- Favicons -->
+      <!-- Google Fonts -->
+      <link rel="icon" href="assets/img/icon2.png">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900" rel="stylesheet">
+      <!-- Vendor CSS Files -->
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   
+      <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+      <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+      <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+      <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+      <!-- Template Main CSS File -->
+      <link href="assets/css/style.css" rel="stylesheet">
+
+      
+     
+   </head>
+   <style type="text/css">
+      #header .logo img {
+      padding: 0;
+      margin: 0;
+      max-height: 62px;
+      }
+      .animate__animated.animate__backInLeft .animate__backInRight {
+      --animate-duration: 2s;
+      }
+      /* This changes all the animations globally */
+      :root {
+      --animate-duration: 800ms;
+      --animate-delay: 0.9s;
+      }
+      iframe{
+      border:0; 
+      height: 600px; 
+      width: 600px;
+      border-radius: 10px;
+      }
+      @media(max-width: 600px){
+      iframe{
+      border:0; 
+      height: 400px; 
+      width: 335px;
+      border-radius: 10px;
+      }
+      }
+      .bg{
+      background-image:url(assets/img/lo.jpg); 
+      background-attachment: fixed; 
+      height: 700px;
+      }
+      @media(max-width: 600px){
+      .bg{
+      background-image:url(assets/img/lo.jpg); 
+      background-attachment: fixed; 
+      height: 2100px;
+      }
+      }
+      .contact-area{
+      margin-top: 10px;
+      }
+      @media(max-width: 600px){
+      .contact-area{
+      margin-top: 50px;
+      }
+      }
+
+        .formerror {
+            color: red;
+        }
+.navbar-mobile .mobile-nav-toggle {
+  position: ;
+  top: 15px;
+  right: 15px;
+}
+
+      .featured-services .icon-box {
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  z-index: 1;
+}
+.featured-services .icon-box::before {
+  content: "";
+  position: absolute;
+  background: #cbe0fb;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 100%;
+  transition: all 0.3s;
+  z-index: -1;
+}
+.featured-services .icon-box:hover::before {
+  background: #106eea;
+  top: 0;
+  border-radius: 0px;
+}
+.featured-services .icon {
+  margin-bottom: 15px;
+}
+.featured-services .icon i {
+  font-size: 48px;
+  line-height: 1;
+  color: #106eea;
+  transition: all 0.3s ease-in-out;
+}
+.featured-services .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+.featured-services .title a {
+  color: #111;
+}
+.featured-services .description {
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 0;
+  text-align: justify;
+}
+.featured-services .icon-box:hover .title a, .featured-services .icon-box:hover .description {
+  color: #fff;
+}
+.featured-services .icon-box:hover .icon i {
+  color: #fff;
+}
+
+   </style>
+   <body>
+      <!-- ======= Header ======= -->
+      <header id="header" class="fixed-top d-flex align-items-center" style="background: white;">
+         <div class="container d-flex justify-content-between">
+            <div class="logo">
+               <h1><a href="https://datakawach.com/"><img src="assets/img/datakawachfinal.jpg" ></a></h1>
+            </div>
+            <nav id="navbar" class="navbar">
+               <ul>
+                  <li><a class="nav-link scrollto active" href="#hero"style="color: black;">Home</a></li>
+                  <li><a class="nav-link scrollto" href="#about" style="color: black;">About Us</a></li>
+                  <li><a class="nav-link scrollto" href="#services"style="color: black;">Services</a></li>
+                  <li><a class="nav-link scrollto" href="#team"style="color: black;">Our Challenges</a></li>
+                  <li><a class="nav-link scrollto" href="blog.p"style="color: black;">Blog</a></li>
+                  <li><a class="nav-link scrollto" href="#contact"style="color: black;">Contact Us</a></li>
+                  <li><a class=" text-info" href="login.php">Login</a></li>
+
+               </ul>
+               <i class="bi bi-list mobile-nav-toggle bg-dark" ></i>
+            </nav>
+            <!-- .navbar -->
+         </div>
+      </header>
+      <!-- End Header -->
+
+      <!-- ======= hero Section ======= -->
+      <section id="hero">
+         <div class="hero-container">
+            
+            <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+               <ol id="hero-carousel-indicators" class="carousel-indicators"></ol>
+               <div class="carousel-inner" role="listbox">
+                  <div class="carousel-item active" style="background-image: url(assets/img/1a.webp)">
+                     <div class="carousel-container">
+                        <div class="container">
+                           <h2 class="animate__animated animate__fadeInDown">The Best Business Information</h2>
+                           <p class="animate__animated animate__fadeInUp">We're In The Business Of Helping You Start Your Business.</p>
+                           <a href="#about" class="btn-get-started scrollto animate__animated animate__fadeInUp">Get Started</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item" style="background-image: url(assets/img/2a.webp)">
+                     <div class="carousel-container">
+                        <div class="container">
+                           <h2 class="animate__animated animate__fadeInDown">Discover the impact of a cyber-incident first-hand</h2>
+                           <p class="animate__animated animate__fadeInUp">We help you identify security gaps and develop a comprehensive security plan.</p>
+                           <a href="#about" class="btn-get-started scrollto animate__animated animate__fadeInUp">Get Started</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item" style="background-image: url(assets/img/5a.webp)">
+                     <div class="carousel-container">
+                        <div class="container">
+                           <h2 class="animate__animated animate__fadeInDown">Work together on your team’s resilience</h2>
+                           <p class="animate__animated animate__fadeInUp">We help you understand the complex regulatory landscape.</p>
+                           <a href="#about" class="btn-get-started scrollto animate__animated animate__fadeInUp">Get Started</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+               <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+               </a>
+               <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+               <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+               </a>
+            </div>
+         </div>
+      </section>
+      <!-- End Hero Section -->
+
+      <main id="main">
+         <!-- ======= About Section ======= -->
+         <br><br>
+         <div class="container" >
+            <div class="row"data-aos="fade-up"data-aos-offset="200"data-aos-easing="ease-in-sine">
+               <div class="section-headline text-center">
+                  <h2>About Data Kawach</h2>
+               </div>
+               <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                     <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                           <h4>What is Data Kawach?</h4>
+                        </button>
+                     </h2>
+                     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                           <p style="text-align:justify;">
+                              
+                              It’s the highest-certified IT security product in India. The Data Kawach can bridge the seemingly impossible in a single product: strict security and high accessibility. It guarantees one-way data transfers in real-time over a lightning-fast 1-10Gbps data connection.<br><br>
+                              Data Kawach performs many of the same security duties as firewalls, but the two technologies are inherently different. Firewalls are software-based solutions built on commercial operating systems that require frequent maintenance and are vulnerable to a wide array of external attacks. Data Kawach is, on the other hand, a hybrid solution that uses both hardware and software to enforce one-way data flow through a deterministic mechanism that cannot be modified or forced to operate in an unintended way.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="accordion-item">
+                     <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                           <h4>How does Data Kawach technology work?</h4>
+                        </button>
+                     </h2>
+                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                           <p style="text-align:justify;">Data kawach is a hybrid device, also called a "unidirectional security gateway", which sits between two networks. Working like a check valve, the function of a Data Kawach is to allow all data to pass in the forward direction while blocking all data in the reverse direction.
+                              <br><br>Because it is only physically capable of sending data one-way, a Data Kawach creates a physical barrier or “air gap” between the two points. This prevents data leakage, eliminates the threat of malware, and fully protects the sending network from external threats through Data Kawach’s network path. The other consequence of this one-way path is that the protocol is “broken” between the sending and receiving domains to accommodate a one-way protocol connection.<br><br>
+                              If a Data Kawach is directed out from the high-security network towards a network with a lower security level, data can be transferred while the network stays protected. By transferring information via a Data Kawach, you are guaranteed that no one can use the same connection in the opposite direction to reach the secure network and manipulate its environment.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="accordion-item">
+                     <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                           <h4>What are Data Kawach used for?</h4>
+                        </button>
+                     </h2>
+                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                           <p style="text-align:justify;">Data kawach is used to segment and defend networks and transfer information in one direction. They allow data to be sent from a secured network/segment to external systems and users (e.g. the cloud, a remote monitoring facility, regulatory bodies), without creating a threat vector back into the secured network. Data kawach can be used to protect network segments of all sizes, from a single controller to an entire facility.<br><br> Critical infrastructure operators, industrial companies, military commands, intelligence organizations, and even commercial companies such as financial institutions use Data Kawach to provide reliable, hardware-enforced security for their systems and networks.</p>
+                        </div>
+                     </div>
+                  </div>
+                  
+                  <div class="accordion-item">
+                     <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                           <h4>Why Choose Data Kawach?</h4>
+                        </button>
+                     </h2>
+                     <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                           <p style="text-align:justify;">Data Kawach covers many different areas, including access control, cloud security, malware protection, BYOD security, remote workforce, and web security. The modern digital business of any size, industry, or location needs to keep up with all these responsibilities to maintain a strong security posture. Data Kawach is a forward-thinking nonprofit with a mission “to make the connected world a safer place by developing, validating, and promoting timely best practice solutions that help people, businesses, and governments protect themselves against pervasive cyber threats.”
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <br><br>
+         <div class="about-area area-padding"id="about">
+            <div class="container ">
+               <div class="row">
+                  <div class="col-md-12 col-sm-12 col-xs-12">
+                     <div class="section-headline text-center">
+                        <h2 data-aos="fade-up"data-aos-offset="300"data-aos-easing="ease-in-sine">Data Kawach</h2>
+                     </div>
+                  </div>
+               </div>
+               <br><br>
+               <div class="row">
+                  <!-- single-well start-->
+                  <div class="col-md-6 col-sm-6 col-xs-12"data-aos="zoom-in-up"data-aos-offset="300"data-aos-easing="ease-in-sine">
+                     <div class="well-left">
+                        <div class="single-well">
+                           <a href="">
+                           <img src="assets/img/one.svg" class="img-fluid mt-5 shadow" >
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- single-well end-->
+                  <div class="col-md-6 col-sm-6 col-xs-12" data-aos="zoom-in-up"data-aos-offset="300"data-aos-easing="ease-in-sine">
+                     <div class="well-middle">
+                        <div class="single-well">
+                           <p style="text-align: justify;">Data Kawach is a dedicated cyber security expert. We are guided by our mission to derive satisfaction from helping to create a more secure society with the help of our technical and innovative solutions.<br>
+                              Data Kawach covers many different areas, including access control, cloud security, malware protection, BYOD security, remote workforce, and web security. 
+                           </p>
+                           <ul>
+                              <li>
+                                 <i class="bi bi-check"></i> Risk Management.
+                              </li>
+                              <li>
+                                 <i class="bi bi-check"></i> We work with and create confidential information .
+                              </li>
+                              <li>
+                                 <i class="bi bi-check"></i> To lead the way in innovation.
+                              </li>
+                              <li>
+                                 <i class="bi bi-check"></i> Handle risk the right way
+                              </li>
+                              <li>
+                                 <i class="bi bi-check"></i> Provides your team with the guidance, processes, and technology.
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- End col-->
+               </div>
+               <br><br><br>
+               <div class="row">
+                  <!-- single-well end-->
+                  <div class="col-md-6 col-sm-6 col-xs-12" data-aos="zoom-in-down"data-aos-offset="300"data-aos-easing="ease-in-sine">
+                     <div class="well-middle">
+                        <div class="single-well">
+                           <div class="section-headline text-center">
+                              <h2>How are Data Kawch different?</h2>
+                           </div>
+                           <p style="text-align: justify;">Data Kawach provides a multi-layered, patented approach to the design of our Data Kawachs.
+                              The source communicates with the send side proxy of the Data Kawach. That two-way protocol is then converted to a one-way data transfer across the Data Kawach to the receive side. Then the receive side proxy initiates a new two-way communication with the destination and completes the data transfer.<br><br>Data Kawach feature transfer rates at up to an industry-leading 10 gigabits per second, with a packet transfer latency of 2 milliseconds or less. In addition, the reliability, high bandwidth, and low latency of data kawach mean packets never require retransmission, creating highly tuned and optimized solutions with zero data loss when operating within the specified bandwidth rate.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- single-well start-->
+                  <div class="col-md-6 col-sm-6 col-xs-12">
+                     <div class="well-left">
+                        <div class="single-well">
+                           <a href="">
+                           <img src="assets/img/network.svg" class="img-fluid mt-5"data-aos="zoom-in-down"data-aos-offset="300"data-aos-easing="ease-in-sine">
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- End col-->
+               </div>
+               <br><br><br>
+               <div class="row">
+                  <!-- single-well end-->
+                  <div class="col-md-6 col-sm-6 col-xs-12"data-aos="zoom-in-up"data-aos-offset="300"data-aos-easing="ease-in-sine">
+                     <div class="well-left">
+                        <div class="single-well">
+                           <a href="">
+                           <img src="assets/img/two.svg" class="img-fluid mt-5 shadow"  >
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-sm-6 col-xs-12 mt-5"data-aos="zoom-in-up"data-aos-offset="300"data-aos-easing="ease-in-sine">
+                     <div class="well-middle">
+                        <div class="single-well">
+                           <div class="section-headline text-center">
+                              <h2>what if I need to send data two-ways?</h2>
+                           </div>
+                           <p style="text-align: justify;">Some systems cannot operate one way, so they require a two-way solution. For these use cases, Team Data Kawach has a unique bidirectional data kawach solution that operates on two parallel one-way paths. Get all the security advantages of Data Kawachs with the flexibility of a two-way solution.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- End col-->
+               </div>
+            </div>
+         </div>
+         <!-- End About Section -->
+
+         <br><br>
+
+<section id="featured-services" class="featured-services mt-5">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+         <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="section-headline services-head text-center">
+               <h2>Our Solutions</h2>
+            </div>
+         </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0 mt-5">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><i class="bi bi-fingerprint"></i></div>
+              <h4 class="title"><a href="">IT Security</a></h4>
+              <p class="description">IT safety, whether deployed at the brink of the network, within a traditional statistics middle or corporation, all have a commonplace theme — cybersecurity gear need right packet visibility to protect.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0 mt-5">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon"><i class="bi bi-hdd-network-fill"></i></div>
+              <h4 class="title"><a href="">Network Monitoring</a></h4>
+              <p class="description">IT professionals have a hard, ever-evolving activity. You need to realize what is going on in the community in actual time. From information on every community tool to tracking the normal overall performance of community offerings,</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0 mt-5">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4 class="title"><a href="">Network Test Access Point (TAP)</a></h4>
+              <p class="description">A community TAP is a reason-constructed hardware tool that lets in you to get admission to and display your network visitors via copying packets with out impacting or compromising community integrity.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0 mt-5">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4 class="title"><a href="">SDN Solutions</a></h4>
+              <p class="description">SDN centralizes the community manipulation via isolating manipulating common sense to off-device computer systems, requiring you to have a method of verbal exchange among the 2 planes, information, and management.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+</section>
+
+   <br><br><br>
+      <div class="container-fluid" >
+            <div class="row">
+               <div class="col-md-6 text-center" style="background: #1d252cb5; "data-aos="zoom-in"data-aos-offset="300"data-aos-easing="ease-in-sine">
+                  <br><br>
+                  <div class="section-headline services-head text-center">
+                     <u style="color: white;">
+                        <h2 class="mt-5 text-white">Our Vision</h2>
+                     </u>
+                  </div>
+                  <p style="text-align: justify;" class="text-center text-white">To understand the world’s cyber behaviors to stop the bad and free the good. To foster safe and trusting environments through a comprehensive security solution that understands digital identities and their cyber behaviors to protect employees and critical data everywhere.</p>
+                  <br><br>
+               </div>
+               <div class="col-md-6 text-center" style="background:#008573;"data-aos="zoom-in"data-aos-offset="300">
+                  <br><br>
+                  <div class="section-headline services-head text-center">
+                     <u style="color: white;">
+                        <h2 class="mt-5 text-white">Our Mission</h2>
+                     </u>
+                  </div>
+                  <p style="text-align: justify;"class="text-center text-white">Data-Kawach is a dedicated cyber security expert. We are guided by our mission to derive satisfaction from helping to create a more secure society with the help of our technical and innovative solutions.</p>
+                  <br><br>
+               </div>
+            </div>
+         </div>
+
+
+
+         <!-- ======= Services Section ======= -->
+         <div id="services" class="services-area area-padding" >
+            <div class="container"data-aos="fade-up"data-aos-offset="300"data-aos-easing="ease-in-sine">
+               <div class="row">
+                  <div class="col-md-12 col-sm-12 col-xs-12">
+                     <div class="section-headline services-head text-center">
+                        <h2>Our Services</h2>
+                     </div>
+                  </div>
+               </div>
+               <div class="row text-center">
+                  <!-- Start Left services -->
+                  <div class="col-md-4 col-sm-4 col-xs-12"data-aos="fade-up"data-aos-offset="300"data-aos-easing="ease-in-sine">
+                     <div class="about-move">
+                        <div class="services-details">
+                           <div class="single-services">
+                              <a class="services-icon" href="">
+                              <i class="bi bi-briefcase"></i>
+                              </a>
+                              <h4>Data Privacy</h4>
+                              <p>
+                                 Provides Data Privacy services provide a holistic view of your data footprint, and assess risk .
+                              </p>
+                           </div>
+                        </div>
+                        <!-- end about-details -->
+                     </div>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-12"data-aos="fade-up"data-aos-offset="300"data-aos-easing="ease-in-sine">
+                     <div class="about-move">
+                        <div class="services-details">
+                           <div class="single-services">
+                              <a class="services-icon" href="">
+                              <i class="bi bi-card-checklist"></i>
+                              </a>
+                              <h4>Hardware & Embedded Systems</h4>
+                              <p>
+                                 Provides Hardware and Embedded Services that leverage decades of real-world engineering experience.
+                              </p>
+                           </div>
+                        </div>
+                        <!-- end about-details -->
+                     </div>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-12"data-aos="fade-up"data-aos-offset="300"data-aos-easing="ease-in-sine">
+                     <!-- end col-md-4 -->
+                     <div class=" about-move">
+                        <div class="services-details">
+                           <div class="single-services">
+                              <a class="services-icon" href="">
+                              <i class="bi bi-bar-chart"></i>
+                              </a>
+                              <h4>Data Kawach</h4>
+                              <p>
+                                 It guarantees one-way data transfers in real-time over a lightning-fast 1-10Gbps data connection.
+                              </p>
+                           </div>
+                        </div>
+                        <!-- end about-details -->
+                     </div>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-12"data-aos="fade-up"data-aos-offset="300"data-aos-easing="ease-in-sine">
+                     <!-- end col-md-4 -->
+                     <div class=" about-move">
+                        <div class="services-details">
+                           <div class="single-services">
+                              <a class="services-icon" href="">
+                              <i class="bi bi-binoculars"></i>
+                              </a>
+                              <h4>Network security</h4>
+                              <p>
+                                 Secret or sensitive data sent across networks and devices are called data in transit.
+                              </p>
+                           </div>
+                        </div>
+                        <!-- end about-details -->
+                     </div>
+                  </div>
+                  <!-- End Left services -->
+                  <div class="col-md-4 col-sm-4 col-xs-12"data-aos="fade-up"data-aos-offset="300"data-aos-easing="ease-in-sine">
+                     <!-- end col-md-4 -->
+                     <div class=" about-move">
+                        <div class="services-details">
+                           <div class="single-services">
+                              <a class="services-icon" href="">
+                              <i class="bi bi-brightness-high"></i>
+                              </a>
+                              <h4>Government & Defense</h4>
+                              <p>
+                                 Use confidential, real-time data and feed it into your secure networks without compromising security.
+                              </p>
+                           </div>
+                        </div>
+                        <!-- end about-details -->
+                     </div>
+                  </div>
+                  <!-- End Left services -->
+                  <div class="col-md-4 col-sm-4 col-xs-12"data-aos="fade-up"data-aos-offset="300"data-aos-easing="ease-in-sine">
+                     <!-- end col-md-4 -->
+                     <div class=" about-move">
+                        <div class="services-details">
+                           <div class="single-services">
+                              <a class="services-icon" href="">
+                              <i class="bi bi-calendar4-week"></i>
+                              </a>
+                              <h4>Forces one-way data traffic</h4>
+                              <p>
+                                 Prevent data leaks and stop malicious actors from accessing your assets without compromising usability.
+                              </p>
+                           </div>
+                        </div>
+                        <!-- end about-details -->
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- End Services Section -->
+         <!-- ======= Team Section ======= -->
+         <div id="team" class="our-team-area area-padding">
+            <div class="section-headline text-center">
+               <h2 >Our Challenges</h2>
+            </div>
+            <div class="container-fluid bg"data-aos="fade-up"data-aos-offset="300"data-aos-easing="ease-in-sine">
+               <div class="container">
+                  <u class="text-white ">
+                     <h2 class="text-center mt-5" style="color: #d3ce91;">How we can help</h2>
+                  </u>
+                  <br><br><br>
+                  <div class="row">
+                     <br><br>
+                     <div class="col-md-4 col-sm-4 col-xs-4 mb-3"data-aos="fade-up"data-aos-offset="200"data-aos-anchor-placement="center-bottom">
+                        <div class="w3-panel w3-card bg-light">
+                           <br>
+                           <h2 class="text-center"><i class="bi bi-chevron-compact-right"></i>How secure is our business?</h2>
+                           <br>
+                           <p class="text-center">To secure your organization, you must first identify who your threat actors are, and what critical systems and data underpin your business. </p>
+                           <br>
+                        </div>
+                     </div>
+                     <div class="col-md-4 col-sm-4 col-xs-4 mb-3"data-aos="fade-up"data-aos-offset="200"data-aos-anchor-placement="center-bottom">
+                        <div class="w3-panel w3-card bg-light">
+                           <br>
+                           <h2 class="text-center"><i class="bi bi-chevron-compact-right"></i>How do we improve our cyber resilience?</h2>
+                           <br>
+                           <p class="text-center">A lack of internal expertise can prevent you from scoping a resilience plan with clear milestones and outcomes relating to people, processes, and systems.</p>
+                           <br>
+                        </div>
+                     </div>
+                     <div class="col-md-4 col-sm-4 col-xs-4 mb-3"data-aos="fade-up"data-aos-offset="200"data-aos-anchor-placement="center-bottom">
+                        <div class="w3-panel w3-card bg-light">
+                           <br>
+                           <h2 class="text-center"><i class="bi bi-chevron-compact-right"></i>How do we manage supply chain risk?</h2>
+                           <br>
+                           <p class="text-center">When it comes to the supply chain, every link in that chain has its own set of vendors handling different products, services, resources, and budgets to manage cyber security risks.</p>
+                           <br>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="row mt-5">
+                     <br><br>
+                     <div class="col-md-4 col-sm-4 col-xs-4 mb-3"data-aos="fade-up"data-aos-offset="100"data-aos-anchor-placement="center-bottom">
+                        <div class="w3-panel w3-card bg-light">
+                           <br>
+                           <h2 class="text-center"><i class="bi bi-chevron-compact-right"></i>How do we protect critical assets?</h2>
+                           <br>
+                           <p class="text-center">Identifying priority assets is no easy task, as internal departments often lack alignment on how to classify intellectual property and other important data.  </p>
+                           <br>
+                        </div>
+                     </div>
+                     <div class="col-md-4 col-sm-4 col-xs-4 mb-3"data-aos="fade-up"data-aos-offset="100"data-aos-anchor-placement="center-bottom">
+                        <div class="w3-panel w3-card bg-light">
+                           <br>
+                           <h2 class="text-center"><i class="bi bi-chevron-compact-right"></i>How do we comply with regulations?</h2>
+                           <br>
+                           <p class="text-center">More than ever, new regulations are spun up to respond to data security issues, personal privacy concerns, and<br> more. </p>
+                           <br>
+                        </div>
+                     </div>
+                     <div class="col-md-4 col-sm-4 col-xs-4 mb-3"data-aos="fade-up"data-aos-offset="100"data-aos-anchor-placement="center-bottom">
+                        <div class="w3-panel w3-card bg-light">
+                           <br>
+                           <h2 class="text-center"><i class="bi bi-chevron-compact-right"></i>Are we prepared for an incident?</h2>
+                           <br>
+                           <p class="text-center">Incidents can lead to massive network or data breaches that can impact your organization for days or even<br> months. </p>
+                           <br>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         
+         <!-- End Team Section -->
+
+   
+         <!-- ======= Contact Section ======= -->
+         <div id="contact" class="contact-area">
+            <div class="contact-inner area-padding">
+               <div class="contact-overly"></div>
+               <div class="container "data-aos="fade-up"data-aos-offset="300"data-aos-easing="ease-in-sine">
+                  <div class="row">
+                     <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="section-headline text-center">
+                           <h2>Contact us</h2>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row"data-aos="fade-up"data-aos-offset="300"data-aos-easing="ease-in-sine">
+                     <!-- Start contact icon column -->
+                     <div class="col-md-4">
+                        <div class="contact-icon text-center">
+                           <div class="single-icon">
+                              <i class="bi bi-phone"></i>
+                              <p>
+                                 <b>Call:</b>+91 8878992542<br>
+                                 <span>Monday-Saturday (9:30am-6pm)</span>
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- Start contact icon column -->
+                     <div class="col-md-4">
+                        <div class="contact-icon text-center">
+                           <div class="single-icon">
+                              <i class="bi bi-envelope"></i>
+                              <p>
+                                 <b>Email:</b>mail@datakawach.com<br>
+                                 <span><b>Web:</b> www.datakawach.com</span>
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- Start contact icon column -->
+                     <div class="col-md-4">
+                        <div class="contact-icon text-center">
+                           <div class="single-icon">
+                              <i class="bi bi-geo-alt"></i>
+                              <p>
+                                 <b>Location:</b> Software Technology Parks Of India,Gwalior (M.P.)<br>
+                                 <span>474005, India</span>
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <br><br>
+                  <div class="row">
+                     <!-- Start Google Map -->
+                     <div class="col-md-6" data-aos="fade-up"data-aos-offset="300"data-aos-easing="ease-in-sine">
+                        <!-- Start Map -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1789.00581424315!2d78.155997!3d26.261286!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe15f4939a2f841f3!2sSoftware%20Technology%20Park%20of%20India%20Gwalior!5e0!3m2!1sen!2sin!4v1653461313567!5m2!1sen!2sin"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"  ></iframe>
+                        <!-- End Map -->
+                     </div>
+                     <!-- End Google Map -->
+                     <!-- Start  contact -->
+                     <div class="col-md-6 shadow-lg" data-aos="fade-up"data-aos-offset="300"data-aos-easing="ease-in-sine" style="border-radius: 10px;">
+                        <div class="form contact-form mt-5">
+                           <center><span style="color: #3ec1d5;" >Kindly Fill The Form:</span></center><br>
+                           <form action="insert.php" method="post" role="form" name="myForm" onsubmit="return validateForm()" >
+                              <div class="form-group"id="name">
+                                 <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                                 <br><span class="formerror"></span>
+                              </div>
+                             
+                              <div class="form-group mt-3"id="phone">
+                                 <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone Number" required>
+                                 <br><span class="formerror"></span>
+                              </div>
+                              <div class="form-group mt-3"id="message">
+                                 <textarea class="form-control" name="message" id="message" rows="5" placeholder="Message" required></textarea>
+                                 <br><span class="formerror"></span>
+                              </div>
+                              <br>
+                              <div class="text-center"><button type="submit" onclick="myFunction()" class="btn btn-outline-dark ">Send Message</button></div>
+                           </form>
+                           
+                           <script>
+                           function myFunction() {
+                             alert("Message Sent");
+                           }
+                           </script>
+
+                           <br><br>
+                        </div>
+                     </div>
+                     <!-- End Left contact -->
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- End Contact Section -->
+      </main>
+      <!-- End #main -->
+<div class="container">
+   <center>
+   <div class="col-md-12">
+                     
+         <img src="assets/img/01.jpeg" width="220px">
+         <img src="assets/img/02.jpeg" width="170px" height="80px" >
+         <img src="assets/img/03.jpeg" width="190px" style="margin-left: 10px;">
+         <img src="assets/img/MSME-LOGO.png" width="120px"height="80px" style="margin-left: 20px;">
+         <img src="assets/img/azadi.webp" width="180px"height="70px" style="margin-left: 20px;">
+         <img src="assets/img/DPIIT.webp"width="110px"height="80px"style="margin-left: 20px;"> 
+         <img src="assets/img/05.png" width="190px"height="80px" style="margin-left: 20px;">
+
+ 
+   </center>
+   <div class="col-md-2"></div>
+</div>
+<br><br>
+
+      <!-- ======= Footer ======= -->
+      <footer>
+         <div class="footer-area">
+            <div class="container attachment-fixed">
+               <div class="row">
+                  <div class="col-md-4">
+                     <div class="footer-content">
+                        <div class="footer-head">
+                           <div class="footer-logo">
+                              <a href="index.html"><img src="assets/img/logo2.png" style="max-height:70px;"></a>
+                              <p style="text-align:justify;">Data-Kawach is a dedicated cyber security expert. We are guided by our mission to derive satisfaction from helping to create a more secure society with the help of our technical and innovative solutions.</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- end single footer -->
+                  <div class="col-md-3">
+                     <div class="footer-content">
+                        <div class="footer-head">
+                           <h4>information</h4>
+                           <br>
+                           <div class="footer-contacts">
+                              <p><span>Tel:</span> +91 8878992542</p>
+                              <p><span>Email:</span>mail@datakawach.com</p>
+                              <p><span>Working Hours:</span> 9:30am-6pm</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-3">
+                     <div class="footer-content">
+                        <div class="footer-head">
+                           <h4>about</h4>
+                           <br>
+                           <div class="footer-contacts">
+                              <p><span>What is</span>Data Kawach?</p>
+                              <p><span>How does data kawach </span>technology work?</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-2">
+                     <div class="footer-icons">
+                        <ul>
+                           <li>
+                              <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+                           </li>
+                           <li>
+                              <a href="https://twitter.com/home"><i class="bi bi-twitter"></i></a>
+                           </li>
+                           <li>
+                              <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+                           </li>
+                           <li>
+                              <a href="https://www.linkedin.com/feed/"><i class="bi bi-linkedin"></i></a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="footer-area-bottom">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12 col-sm-12 col-xs-12">
+                     <div class="copyright text-center">
+                        <p>
+                           Copyright © 2022<strong> Karunya IT Solutions (OPC) Private Limited</strong>
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- End  Footer -->
+      <div id="preloader"></div>
+      <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+      <!-- Vendor JS Files -->
+      <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+      <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+      <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+      <script src="assets/vendor/php-email-form/validate.js"></script>
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+      <!-- Template Main JS File -->
+      <script src="assets/js/main.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+
+      
+<script>
+    function seterror(id, error){
+        element=document.getElementById(id);
+        element.getElementsByClassName('formerror')[0].innerHTML=error;
+    }
+
+
+    function validateForm(){
+    var returnval = true;
+    
+    var name = document.forms['myForm']["name"].value;
+     if (name.length == 0){
+        seterror("name", "*Length of name cannot be zero!");
+        returnval = false;
+    }
+
+    // var name = document.forms['myForm']["name"].value;
+    // if( /[^a-zA-Z0-9\/]/.test( name ) ) {
+    //     seterror("name", "*Name not contain special character only..!!");
+    //     return false;
+    // }
+
+   
+     var name = document.forms['myForm']["name"].value;
+     if (!isNaN(name)) {
+      seterror("name", "*Name must contain alphabets only..!!");
+      return false;
+      }
+
+    if (name.length<2){
+        seterror("name", "*Length of name is too short");
+        returnval = false;
+    }
+
+    var phone = document.forms['myForm']["phone"].value;
+    if (phone.length != 10){
+        seterror("phone", "*Phone number should be of 10 digits!");
+        returnval = false;
+    }
+
+    var phone = document.forms['myForm']["phone"].value;
+    if (phone.length > 10){
+        seterror("phone", "*Phone number should be of 10 digits!");
+        returnval = false;
+    }
+    
+
+    
+    var phone = document.forms['myForm']["phone"].value;
+    if (isNaN(phone)) {
+      seterror("phone", "*Phone must contain numbers only..!!");
+      return false;
+      }
+
+   var message = document.forms['myForm']["message"].value;
+     if (!isNaN(message)) {
+      seterror("message", "*Name must contain alphabets only.!!");
+      return false;
+      }
+   var message = document.forms['myForm']["message"].value;
+    if( /[^a-zA-Z0-9\-\/]/.test( message ) ) {
+      seterror("message", "*Message not contain special character..!!");
+      return false;
+    }
+
+       return returnval;
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+<script>
+  AOS.init();
+</script>
+   </body>
+</html>
